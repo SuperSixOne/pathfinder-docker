@@ -7,11 +7,11 @@ Dockerfile for running [Pathfinder](https://github.com/exodus4d/pathfinder), the
 # Installation
 1. Clone `docker-compose.yml` file 
 ```
-sudo wget https://raw.githubusercontent.com/KryptedGaming/pathfinder-docker/master/docker-compose.yml
+sudo wget https://raw.githubusercontent.com/SuperSixOne/pathfinder-docker/master/docker-compose.yml
 ```
 2. Clone the example `.env` file
 ```
-sudo wget https://raw.githubusercontent.com/KryptedGaming/pathfinder-docker/master/.env
+sudo wget https://raw.githubusercontent.com/SuperSixOne/pathfinder-docker/master/.env
 ```
 3. Fill out the `.env` file and start up your instance
 ```
