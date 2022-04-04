@@ -40,7 +40,7 @@ RUN apt-get install -y \
 ARG VERSION
 RUN mkdir /var/www/pathfinder
 RUN mkdir /var/log/cron-www/
-RUN git clone --branch $VERSION https://github.com/exodus4d/pathfinder.git /var/www/pathfinder
+RUN git clone --branch $VERSION https://github.com/goryn-clade/pathfinder.git /var/www/pathfinder
 COPY ./config/composer.json /root/.composer/config.json
 RUN chown -R www-data:www-data /var/www/pathfinder
 RUN mkdir /tmp/cache/
@@ -54,7 +54,7 @@ RUN composer install -d /var/www/pathfinder/
 
 # COPY PATHFINDER Websocket Server
 RUN mkdir /var/www/pathfinder_websocket
-RUN git clone https://github.com/exodus4d/pathfinder_websocket.git /var/www/pathfinder_websocket
+RUN git clone https://github.com/goryn-clade/pathfinder_websocket.git /var/www/pathfinder_websocket
 RUN chown -R www-data:www-data /var/www/pathfinder_websocket
 
 # COPY PATHFINDER Websocket Server service script
